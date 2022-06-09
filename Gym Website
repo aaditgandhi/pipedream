@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadit Fitness</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url('abs.jpg.jpg');
+            height: 1250px
+            
+        }
+        .left{
+            display: inline-block;
+            /*border: 2px solid red;*/ 
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            color: white;
+        }
+        .left div{
+            text-align: center;
+        }
+        .left img{
+            width: 150px;
+            filter: invert(100%);
+            
+        }
+        .mid{
+            display: block;
+            width: 40% ;
+            margin: 20px auto;
+            /*border: 2px solid green;*/
+            
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /*border: 2px solid blue;*/
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px ;
+        }
+        .navbar li a:hover , .navbar li a.active{
+            text-decoration: underline;
+            color: yellow;
+        }
+        .btn{
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: grey;
+        }
+        .container{
+            border: 2px solid white;
+            margin: 100px 1000px;
+            padding: 50px;
+            width: 25%;
+            border-radius: 20px;
+            color: white;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 300px;
+            padding: 2px;
+            border: 2px solid grey;
+            margin: 3px auto;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 33%;
+            margin: 15px auto;
+        }
+    </style>
+</head>
+<body>
+    <header class = "header">
+        <div class = "left">
+            <img src="dumbel.png.png" alt="">
+            <div>AADIT FITNESS</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">call us now</button>
+            <button class="btn">email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of PUNE</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
